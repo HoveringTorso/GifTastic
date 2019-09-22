@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTC-8" />
+  <title>GifTastic</title>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <h1>GifTastic Search</h1>
+
+  <!-- Rendered Buttons will get Dumped Here  -->
+  <div id="buttons-view"></div>
+
+  <form id="topic-form">
+    <label for="topic-input">Add a Gif, Yo!</label>
+    <input type="text" id="topic-input" />
+    <br />
+
+    <!-- Button triggers new gif to be added -->
+    <input id="add-topic" type="submit" value="Add a Topic" />
+  </form>
+
+  <!-- Gifs will Get Dumped Here -->
+  <div id="gifs-view"></div>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+  <script src="assets/javascript/app.js"></script>
+</body>
