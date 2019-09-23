@@ -11,22 +11,44 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <h1>GifTastic Search</h1>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand">GifTastic Search</a>
+    <form class="form-inline">
+      
+      <!-- Button triggers new gif to be added -->
+      <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="New Topic"
+              aria-label="New Topic"
+              aria-describedby="add-topic"
+              id="topic-input"
+            />
+            <div class="input-group-append">
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="add-topic"
+              >
+                Add Topic
+              </button>
+            </div>
+          </div>
+    </form>
+  </nav>
 
-  <!-- Rendered Buttons will get Dumped Here  -->
-  <div id="buttons-view"></div>
+  <div class="container">
+    <div class="row">
+      <!-- Rendered Buttons will get Dumped Here  -->
+      <div id="buttons-view"></div>
+    </div>
 
-  <form id="topic-form">
-    <label for="topic-input">Add a Gif, Yo!</label>
-    <input type="text" id="topic-input" />
-    <br />
-
-    <!-- Button triggers new gif to be added -->
-    <input id="add-topic" type="submit" value="Add a Topic" />
-  </form>
-
-  <!-- Gifs will Get Dumped Here -->
-  <div id="gifs-view"></div>
+    <div class="row">
+      <!-- Gifs will Get Dumped Here -->
+      <div id="gifs-view"></div>
+    </div>
+  </div>
   <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

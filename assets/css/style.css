@@ -1,7 +1,12 @@
-button,
-div,
-form,
-h1,
-input {
+.gif-div {
+  display: inline-block;
   margin: 10px;
+}
+
+.topic-btn {
+    margin: 10px;
+}
+
+.row {
+  margin-top: 20px;
 }
